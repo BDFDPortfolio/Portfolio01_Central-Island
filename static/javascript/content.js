@@ -8,7 +8,6 @@
  * @FilePath     : \static\javascript\content.js
  * Copyright (c) 2022 by BDFD, All Rights Reserved.
  */
-
 $(function () {
 	// Parallax
 	$(".intro-section").parallax({
