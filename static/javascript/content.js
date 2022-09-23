@@ -1,27 +1,18 @@
-/*
- * @Date         : 2022-09-22 17:14:22
- * @Author       : BDFD,bdfd2005@gmail.com
- * @Github       : https://github.com/bdfd
- * @LastEditTime : 2022-09-22 17:18:41
- * @LastEditors  : BDFD
- * @Description  :
- * @FilePath     : \static\javascript\content.js
- * Copyright (c) 2022 by BDFD, All Rights Reserved.
- */
 $(function () {
 	// Parallax
 	$(".intro-section").parallax({
-		imageSrc: "img/bg-1.jpg",
+		imageSrc: "static/imges/bg-1.jpg",
 		speed: 0.2,
 	});
 	$(".services-section").parallax({
-		imageSrc: "img/bg-2.jpg",
+		imageSrc: "static/imges/bg-2.jpg",
 		speed: 0.2,
 	});
 	$(".contact-section").parallax({
-		imageSrc: "img/bg-3.jpg",
+		imageSrc: "static/imges/bg-3.jpg",
 		speed: 0.2,
 	});
+
 	// jQuery Scroll Up / Back To Top Image
 	$.scrollUp({
 		scrollName: "scrollUp", // Element ID
@@ -34,6 +25,7 @@ $(function () {
 		scrollText: "", // Text for element, can contain HTML
 		scrollImg: true, // Set true to use image
 	});
+
 	// ScrollUp Placement
 	$(window).on("scroll", function () {
 		// If the height of the document less the height of the document is the same as the
@@ -46,15 +38,18 @@ $(function () {
 			$("#scrollUp").css("bottom", "30px");
 		}
 	});
+
 	$(".single-page-nav").singlePageNav({
 		offset: $(".single-page-nav").outerHeight(),
 		speed: 1500,
 		filter: ":not(.external)",
 		updateHash: true,
 	});
+
 	$(".navbar-toggle").click(function () {
 		$(".single-page-nav").toggleClass("show");
 	});
+
 	$(".single-page-nav a").click(function () {
 		$(".single-page-nav").removeClass("show");
 	});
