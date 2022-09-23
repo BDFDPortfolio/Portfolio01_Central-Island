@@ -1,15 +1,15 @@
 $(function () {
 	// Parallax
 	$(".intro-section").parallax({
-		imageSrc: "static/imges/bg-1.jpg",
+		imageSrc: "static/images/bg-1.jpg",
 		speed: 0.2,
 	});
 	$(".services-section").parallax({
-		imageSrc: "static/imges/bg-2.jpg",
+		imageSrc: "static/images/bg-2.jpg",
 		speed: 0.2,
 	});
 	$(".contact-section").parallax({
-		imageSrc: "static/imges/bg-3.jpg",
+		imageSrc: "static/images/bg-3.jpg",
 		speed: 0.2,
 	});
 
